@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card *ngFor="let character of characters" class="character-card">
+      <mat-card-header>
+        <mat-card-title>{{ character.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="character.image" [alt]="character.name" />
+      <mat-card-content>
+        <p>Status: {{ character.status }}</p>
+        <p>Species: {{ character.species }}</p>
+        <p>Gender: {{ character.gender }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
